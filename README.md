@@ -1,5 +1,5 @@
 This is a 24/7 Joke Generator
-
+Hit the button and enjoy the freshly brewed jokes
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
