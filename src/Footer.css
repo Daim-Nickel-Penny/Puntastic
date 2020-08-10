@@ -10,6 +10,9 @@
     overflow: hidden;
     position: relative;
   }
+  *{
+    align-self: center;
+  }
   .btnf i{
     line-height: 50px;
     font-size: 26px;

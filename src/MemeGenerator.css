@@ -10,7 +10,7 @@ code {
   }
   
   .meme>img {
-    width: 70%;
+    width: 60%;
   }
   * {
     box-sizing: border-box;
@@ -39,7 +39,9 @@ code {
       -2px 0 0 #000,
       2px 2px 5px #000;
   }
-  
+  .btnsub{
+    align-items: center;
+  }
   .meme>.bottom {
     bottom: 0;
   }

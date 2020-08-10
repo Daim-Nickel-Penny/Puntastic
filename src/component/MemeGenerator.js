@@ -1,6 +1,7 @@
 import React from "react";
 import Input from './input';
 import '../MemeGenerator.css';
+import { Button, ButtonToggle } from "reactstrap";
 
 class MemeGenerator extends React.Component {
     constructor(){
@@ -64,7 +65,7 @@ class MemeGenerator extends React.Component {
                         value={this.state.bottomText}
                         onChange= {this.handleChange}
                     />
-                    <button className="col-2 col-md-1" onClick={this.chooseRandom} >Gen</button>
+                    <ButtonToggle className="col-2 col-md-1 btnsub" onClick={this.chooseRandom} >New</ButtonToggle>
                 </div>
                 <div className="meme">
                     <img src={this.state.randomImage} fluid  alt=""/>
