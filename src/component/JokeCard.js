@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Card, Button, CardTitle, CardText, Jumbotron } from 'reactstrap';
+import '../JokeCard.css';
+import MemeGenerator from "./MemeGenerator";
+import Emotion from './Emotion';
 
 class JokeCard extends Component{
     constructor(props){
@@ -45,11 +48,18 @@ class JokeCard extends Component{
                             <div className="col-12 col-auto">
                                 <h1>JOKE</h1>
                                 <p> {this.state.jokes}</p>
-                                <Button className=".col-6 .col-sm-2 " onClick={refreshPage} >New Joke</Button>
+                                <Button className="col-6 col-sm-2 btnref " onClick={refreshPage} >New Joke</Button>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
+                
+                <MemeGenerator 
+        />
+               <Emotion/>
+                
+        
+                
 
 
       </div>
