@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, Jumbotron } from 'reactstrap';
 
 class JokeCard extends Component{
     constructor(props){
@@ -30,19 +30,19 @@ class JokeCard extends Component{
     render(){
     return (
       <div className="JokeCard">
-       <h3>Hello</h3>
+       
+        <Jumbotron>
+                    <div className="container">
+                        <div className="row row-header">
+                            <div className="col-12 col-auto">
+                                <h1>JOKE</h1>
+                                <p> {this.state.jokes}</p>
+                                <Button className=".col-6 .col-sm-2 ">Go somewhere</Button>
+                            </div>
+                        </div>
+                    </div>
+                </Jumbotron>
 
-     
-
-        <div className="row justify-content-center">
-          <div className=".col-12 ">
-              <Card>
-                <CardTitle>Joke</CardTitle>
-                <CardText className=".col-12 .col-10 mt-4">  {this.state.jokes} </CardText>
-                <Button className=".col-6 .col-sm-2">Go somewhere</Button>
-            </Card>
-          </div>
-        </div>
 
       </div>
     );
