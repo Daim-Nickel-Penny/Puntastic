@@ -8,7 +8,10 @@ class JokeCard extends Component{
       this.state={
         jokes:""
       }
+    
     }
+
+    
   
     async componentDidMount(){
       const url="https://icanhazdadjoke.com/";
@@ -24,10 +27,15 @@ class JokeCard extends Component{
         }
         this.setState({jokes: result.data.joke})
       }
+      
     
   
   
     render(){
+      function refreshPage(){
+        window.location.reload(false);
+      }
+  
     return (
       <div className="JokeCard">
        
@@ -37,7 +45,7 @@ class JokeCard extends Component{
                             <div className="col-12 col-auto">
                                 <h1>JOKE</h1>
                                 <p> {this.state.jokes}</p>
-                                <Button className=".col-6 .col-sm-2 ">Go somewhere</Button>
+                                <Button className=".col-6 .col-sm-2 " onClick={refreshPage} >New Joke</Button>
                             </div>
                         </div>
                     </div>

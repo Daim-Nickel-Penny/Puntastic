@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Footer.css';
-import {Switch, Route, Redirect,Link} from 'react-router-dom';
+
 
 
 function Footer(){
