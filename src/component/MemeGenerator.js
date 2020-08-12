@@ -2,6 +2,7 @@ import React from "react";
 import Input from './input';
 import '../MemeGenerator.css';
 import { Button, ButtonToggle } from "reactstrap";
+import ReactTooltip from "react-tooltip";
 
 class MemeGenerator extends React.Component {
     constructor(){
@@ -65,7 +66,10 @@ class MemeGenerator extends React.Component {
                         value={this.state.bottomText}
                         onChange= {this.handleChange}
                     />
-                    <ButtonToggle className="col-2 col-md-1 btnsub" onClick={this.chooseRandom} >New</ButtonToggle>
+                    <ButtonToggle className="col-2 col-md-1 btnsub" data-tip data-for="registerTip" onClick={this.chooseRandom} >New</ButtonToggle>
+                    <ReactTooltip id="registerTip" place="top" effect="float">
+        Tooltip for the register button
+      </ReactTooltip>
                 </div>
                 <div className="meme">
                     <img src={this.state.randomImage} fluid  alt=""/>

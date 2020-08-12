@@ -12,7 +12,13 @@
   }
   *{
     align-self: center;
+    margin-right: 1px;
   }
+  .text-center{
+    margin:auto;
+    
+  }
+
   .btnf i{
     line-height: 50px;
     font-size: 26px;
