@@ -7,6 +7,8 @@ import Emotion from './Emotion';
 import ReactTooltip from "react-tooltip";
 import Typewriter from 'typewriter-effect';
 import Bubble from './Bubble';
+import Reactiont from './Reaction';
+
 
 
 class JokeCard extends Component{
@@ -50,21 +52,7 @@ class JokeCard extends Component{
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 col-auto">
-                            <Typewriter className="typs"
-                                  onInit={(typewriter) => {
-                                    typewriter.typeString('Jokes Makes You Laugh')
-                                      .callFunction(() => {
-                                        console.log('String typed out!');
-                                      })
-                                      .pauseFor(1400)
-                                      .deleteChars(5)
-                                      .callFunction(() => {
-                                        console.log('All strings were deleted');
-                                      }).typeString('Feel Better').pauseFor(1400).deleteChars(11).typeString('Relaxed')
-                                      .pauseFor(1400).deleteAll().typeString("Hit The new Joke Button Or Make The meme")
-                                      .start();
-                                  }}
-/>
+                        
                                 <p > {this.state.jokes}</p>
                                 <ButtonToggle className="col-6 col-sm-2 btnref " data-tip data-for="registerTips" onClick={refreshPage} >New Joke</ButtonToggle>
                                 <ReactTooltip id="registerTips" place="bottom" effect="float">
@@ -73,12 +61,30 @@ class JokeCard extends Component{
                             </div>
                         </div>
                     </div>
+                    <Reactiont/>
+                    <Typewriter className="typs"
+                                  onInit={(typewriter) => {
+                                    typewriter.typeString('<strong>Jokes Makes You  <span style="color: red">Laugh</span><strong>')
+                                      .callFunction(() => {
+                                        console.log('String typed out!');
+                                      })
+                                      .pauseFor(1400)
+                                      .deleteChars(5)
+                                      .callFunction(() => {
+                                        console.log('All strings were deleted');
+                                      }).typeString('<strong> <span style="color: #27ae60;">Feel Better</span><strong>').pauseFor(1400).deleteChars(11).typeString('<strong>  <span style="color: blue;">Relaxed</span><strong>')
+                                      .pauseFor(1400).deleteAll().typeString("<strong>Hit The new Joke Button Or Make The meme<strong>")
+                                      .start();
+                                  }}
+/>
                 </Jumbotron>
+            
            
                 <Bubble/>
+                
                 <MemeGenerator/>
                 
-               <Emotion/>
+            
                 
         
                 

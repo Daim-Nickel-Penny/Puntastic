@@ -1,7 +1,7 @@
 import React from "react";
 import Input from './input';
 import '../MemeGenerator.css';
-import { Button, ButtonToggle } from "reactstrap";
+import {  Button, ButtonToggle } from "reactstrap";
 import ReactTooltip from "react-tooltip";
 
 class MemeGenerator extends React.Component {
