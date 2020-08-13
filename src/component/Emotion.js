@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Level from '../Level';
 import '../Emotion.css';
 import Bubble from './Bubble';
+import Face from './FaceComponent';
 
 
 class Emotion extends Component {
@@ -77,11 +78,13 @@ class Emotion extends Component {
         const levels = feeling.levels;
         return (
             <div className="App">
+             <Face/>
                 <h1 className={animate}>{feelingName}</h1>
                 <div className="tubes-wrapper">
                     { Object.keys(levels).map((level, index) => <Level key={index} animate={animate} levelName={level}
                                                                        percentage={levels[level]}></Level>) }
                 </div>
+               
             <Bubble/>
             </div>
         );

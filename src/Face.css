@@ -1,0 +1,84 @@
+.face
+		{
+			width:300px;
+			height: 300px;
+			border-radius: 50%;
+			background: orange;
+			margin: 70px auto;
+            position: relative;
+            margin-bottom: 23px;
+		}
+		.right-eye
+		{
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			position: absolute;
+			background: #fff;
+			left:175px;
+			top: 60px;
+		}
+		.left-eye
+		{
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			position: absolute;
+			background: #fff;
+			right:175px;
+			top: 60px;
+		}
+		.right-nen,.left-nen
+		{
+			width:30px;
+			height:30px;
+			position: absolute;
+			border-radius: 50%;
+			background-color: #403227;
+			transition:0.5s;
+		}
+		.right-nen
+		{
+			top: 20px;
+			left:10px;
+		}
+		.left-nen
+		{
+			top: 20px;
+			right: 10px
+		}
+		.mouse
+		{
+			width:110px;
+			height:7px;
+			background: #403227;
+			position: absolute;
+			top: 180px;
+			left:95px;
+			transition:0.5s;
+		}
+		.face:hover .mouse
+		{
+			width:150px;
+			height:70px;
+			border-bottom-right-radius:120px;
+			border-bottom-left-radius:120px;
+			background: #403227;
+			position: absolute;
+			top: 180px;
+			left: 75px;
+		}
+		.face:hover .left-nen
+		{
+			top:10px;
+		}
+
+		.face:hover .right-nen
+		{
+			top:10px;
+		}
+    h1
+    {
+      color:orange;
+      text-align:center;
+    }
