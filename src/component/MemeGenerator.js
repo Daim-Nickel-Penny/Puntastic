@@ -75,7 +75,7 @@ class MemeGenerator extends React.Component {
                     <img src={this.state.randomImage} fluid  alt=""/>
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
-
+                   
                 </div>
             </div>
         )

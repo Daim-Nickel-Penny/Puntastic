@@ -3,6 +3,7 @@ import Header from './HeaderComponent';
 import JokeCard from './JokeCard';
 import Footer from './Footer';
 import Emotion from './Emotion';
+import Contact from './ContactComponent';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
 class Main extends Component {
@@ -26,6 +27,7 @@ class Main extends Component {
             <Switch>
                 <Route path='/home' component={HomePage}/>
                 <Route path='/emotion' component={Emotion}/>
+                <Route exact path='/contactus' component={Contact}/>
                 <Redirect to='/home'/>
 
             </Switch>

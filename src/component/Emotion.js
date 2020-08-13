@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Level from '../Level';
 import '../Emotion.css';
+import Bubble from './Bubble';
 
 
 class Emotion extends Component {
@@ -81,7 +82,7 @@ class Emotion extends Component {
                     { Object.keys(levels).map((level, index) => <Level key={index} animate={animate} levelName={level}
                                                                        percentage={levels[level]}></Level>) }
                 </div>
-            
+            <Bubble/>
             </div>
         );
     }
