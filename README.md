@@ -1,7 +1,6 @@
 This is a 24/7 Joke Generator
 Hit the button and enjoy the freshly brewed jokes
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).The Project is meant only for fun prupose
 ## Available Scripts
 
 In the project directory, you can run:
